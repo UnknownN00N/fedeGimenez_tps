@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('./general.css');
+@import url('./variables.css');
+
+/* HEADER */
+.logo{
+    width: 45%;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.searchBar{
+    display: inline-block;
+    padding: 1px 19px 1px 1px;
+    margin-left: 20px;
+    background-color: var(--color-grisClaro);
+    font-weight: 300;
+    color: var(--color-grisOscuro);
+    border: 1px solid var(--color-grisOscuro);
+    border-radius: 2px;
+}
+.space-1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.space{
+    margin-top: 1px;
+    margin-bottom: 0px;
+   
+}
+.searchIcon{
+    display: inline-block;
+    padding: 1px;
+    background-color: var(--color-grisClaro);
+    border-radius: 2px;
+    border: 1px solid var(--color-grisOscuro);
+    text-align: left;
+     margin-left: 20px;
+    
+}
+.dollar {
+   text-align: center;
+   font-weight: 300;
+   margin-top: 15px;
+
+}
+.menu{
+    text-align: center;
+    margin: 25px 0;
+}
+.burger-menu{
+    display: inline-block;
+    padding: 9px 13px;
+
+    background-color: var(--color-celeste);
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 24px;
+    
+
+}
+/* MAIN */
+.precio {
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+
+/* FOOTER */
+.copyright{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: 0.8em;
+    text-align: left;
+}
