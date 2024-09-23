@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('./general.css');
+@import url('./variables.css');
+
+/* HEADER */
+.header{
+
+}
+
+.header__images--logo{
+    width: 45%;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.header--searchBar{
+    display: inline-block;
+    padding: 1px 19px 1px 1px;
+    margin-left: 20px;
+    background-color: var(--color-grisClaro);
+    font-weight: 300;
+    color: var(--color-grisOscuro);
+    border: 1px solid var(--color-grisOscuro);
+    border-radius: 2px;
+}
+.header__2--space{
+    margin-top: 1px;
+    margin-bottom: 0px;
+   
+}
+.header__1--space{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.header--searchIcon{
+    display: inline-block;
+    padding: 1px;
+    background-color: var(--color-grisClaro);
+    border-radius: 2px;
+    border: 1px solid var(--color-grisOscuro);
+    text-align: left;
+     margin-left: 20px;
+    
+}
+.header--handDollarIcon{
+   text-align: center;
+   font-weight: 300;
+   margin-top: 15px;
+
+}
+
+.header--navBar{
+display: none;
+}
+
+.header--loginBar{
+display: none;
+}
+.header--menu{
+    text-align: center;
+    margin: 25px 0;
+}
+.burger-menu{
+    display: inline-block;
+    padding: 9px 13px;
+
+    background-color: var(--color-celeste);
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 24px;
+    
+
+}
+/* MAIN */
+.main{
+width: auto;
+text-align: center;
+margin: 0px;
+background-color: var(--color-grisClaro);
+
+}
+
+.main--banner{
+}
+.main--box{
+
+}
+
+.main--box h2{
+text-align: left;
+margin: 15px 10px;
+font-size: 20px;
+font-weight: 500;
+color: var(--color-grisOscuro);
+}
+
+.main--box div article{
+    margin: 10px;
+    background-color: white;
+}
+
+.main--box img{
+    width: 90%;
+    
+}
+
+.main--box h3{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main--box--description{
+    text-align: left;
+    border-top: 1px solid #ebebeb;
+    padding:15px
+}
+
+.main--box--description i{
+    color: var(--color-verde);
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 1px var(--color-verde);
+    padding: 8px;
+    width: 18px;
+}
+
+
+
+.main--box__price{
+    font-size: 18px;
+    font-weight: 450;
+
+}
+.main--box__discount{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-verde);
+}
+/* FOOTER */
+.footer{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    border: 2.5px solid var(--color-grisClaro);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.footer--box{
+    
+}
+
+.footer--box--cards{
+
+}
+
+.footer--box--shipment{
+
+}
+
+.footer--box--return{
+
+}
+.footer--copyright{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+@media (min-width: 361px){
+.main--box article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+}
+.header--navBar{
+    display: block;
+    margin-left: 10px
+    }
+    
+    .header--loginBar{
+    display: block;
+    margin-left: 10px;
+    }
+
+.burger-menu{
+    display: none;
+}
+}
+
+@media (min-width: 769px){
+.main--box article{
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.burger-menu{
+    display: none;
+}
+}
