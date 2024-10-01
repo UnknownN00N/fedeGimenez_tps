@@ -1,0 +1,45 @@
+[{
+    "marca": "Star Wars",
+    "nombre": "Luke Skywalker",
+    "precio": 19000,
+    "stock": 8
+},
+{
+    "marca": "Star Wars",
+    "nombre": "Scout Trooper",
+    "precio": 750,
+    "stock": 50
+},
+{
+    "marca": "Star Wars",
+    "nombre": "Boba Fett",
+    "precio": 8500,
+    "stock": 6
+},
+{
+    "marca": "Star Wars",
+    "nombre": "Dark Trooper",
+    "precio": 6500,
+    "stock": 12
+},
+
+{
+    "marca": "Hot Toys",
+    "nombre": "Batman",
+    "precio": 9000,
+    "stock": 1
+},
+{
+    "marca": "Hot Toys",
+    "nombre": "Captain America",
+    "precio": 2500,
+    "stock": 3
+},
+
+{
+    "marca": "Bandai",
+    "nombre": "Wonder Woman",
+    "precio": 990,
+    "stock": 6
+}
+]

@@ -1,0 +1,45 @@
+[{
+    "marca": "Bandai",
+    "nombre": "Gamora",
+    "precio": 19000,
+    "stock": 2
+},
+{
+    "marca": "Star Wars",
+    "nombre": "Jedi",
+    "precio": 35000,
+    "stock": 2
+},
+{
+    "marca": "Hot Toys",
+    "nombre": "Hellboy",
+    "precio": 2000,
+    "stock": 10
+},
+{
+    "marca": "Bandai",
+    "nombre": "Hulk",
+    "precio": 4500,
+    "stock": 10
+},
+{
+    "marca": "Hot Toys",
+    "nombre": "Tony Stark",
+    "precio": 1000,
+    "stock": 5
+},
+{
+    "marca": "Hot Toys",
+    "nombre": "Black Panther",
+    "precio": 3003,
+    "stock": 9
+},
+
+{
+    "marca": "Hot Toys",
+    "nombre": "Superman",
+    "precio": 1000,
+    "stock": 19
+}
+
+]

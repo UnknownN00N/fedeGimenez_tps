@@ -1,0 +1,46 @@
+   [{
+    "marca": "Hot Toys",
+    "nombre": "Spider-Man",
+    "precio": 4000,
+    "stock": 4
+},
+
+{
+    "marca": "Bandai",
+    "nombre": "Thor",
+    "precio": 7000,
+    "stock": 5
+},
+{
+    "marca": "Bandai",
+    "nombre": "Sailor Pluto",
+    "precio": 7545,
+    "stock": 7
+},
+{
+    "marca": "Bandai",
+    "nombre": "Sailor Saturn",
+    "precio": 550,
+    "stock": 9
+},
+
+{
+    "marca": "Bandai",
+    "nombre": "Vegeta",
+    "precio": 5000,
+    "stock": 8
+},
+{
+    "marca": "Star Wars",
+    "nombre": "Kessel Run",
+    "precio": 450,
+    "stock": 19
+},
+
+{
+    "marca": "Star Wars",
+    "nombre": "Ahsoka Tano",
+    "precio": 2500,
+    "stock": 5
+}
+]
