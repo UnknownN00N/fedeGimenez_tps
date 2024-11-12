@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/8b20537db2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header"> <div class="header--head">
+        <a href="/"><img  class="header__images--logo" alt="Logo Mercado Liebre" src="./images/logo-mercado-liebre.svg"></a>
+            
+        <form class="search" action="/home" method="post">
+            <div class="search-box">
+                <input class="search__control" type="text" name="search" id="search" placeholder=" ">
+                <label class="search__label" for="search">Buscar productos, marcas y más</label>
+                <button class="search-buttons__send" type="button" onclick="window.location.href='/';" ><i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </div>
+                
+        </form>
+        
+        
+        <p class="header--handDollarIcon-desktop"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        
+            </header>
+           
+            
+            <p class="header--handDollarIcon-mobile"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        
+            <div class="header--menu"> <p class="burger-menu">
+                <i class="fa-solid fa-bars"></i> </p>
+                <nav class="header--nav">
+                    <ul class="header--navBar" type="none">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                    <hr>
+                    <ul class="header--loginBar" type="none">
+                        <li><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></i></li>
+                        <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                        <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                    </ul>
+                    </nav> 
+            
+            </div>
+
+    <main class="main">
+
+    <section class="forms--login">
+<form action="login.html" method="post">
+
+<div class="form__box">
+<input class="form__control" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+<label class="form__label" for="usuario"></label>
+
+</div>
+<p id="userError" class="error-message">El nombre de usuario debe tener de 4 a 16 caracteres.</p>
+
+
+<div class="form__box">
+<input class="form__control" type="password" name="password" id="password" placeholder="Elegí tu contraseña">
+<label class="form__label" for="password"></label>
+
+</div>
+<p id="passwordError" class="error-message">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+
+
+<div>
+<button class="form__box--buttons" type="button" onclick="window.location.href='/';" >Enviar</button>
+</div>
+</form>
+<script>
+    const userInput = document.getElementById("usuario");
+    const userError = document.getElementById("userError");
+
+    const passwordInput = document.getElementById("password");
+    const passwordError = document.getElementById("passwordError");
+
+    userInput.addEventListener("input", () => {
+      if (userInput.value.length < 4 || userInput.value.length > 16) {
+        userError.style.display = "inline";
+      } else {
+        userError.style.display = "none";
+      }
+    });
+
+    passwordInput.addEventListener("input", () => {
+      if (passwordInput.value.length < 4 || passwordInput.value.length > 12) {
+        passwordError.style.display = "inline";
+      } else {
+        passwordError.style.display = "none";
+      }
+    });
+</script>
+</section>
+    </main>
+
+    <footer class="footer">
+        <article class="footer--box"></article>
+        <section class="footer--box--cards">
+            <i class="fa-solid fa-credit-card"></i>
+<h4>Pagá con tarjeta o en efectivo</h4>
+<p class="footer--description">Con Mercado Liebre Cash, tenés cuotas sin interés
+    con tarjeta o efectivo en puntos de pago. ¡Y
+    siempre es seguro!</p>
+</section>
+<section class="footer--box--shipment">
+    <i class="fa-solid fa-gift"></i>
+    <h4>Envío gratis desde $ 2.500</h4>
+    <p class="footer--description">Solo por estar registrad@ en Mercado Liebre tenés
+        envíos gratis en miles de productos. Es un
+        beneficio de Mercado Puntos.</p>
+</section>
+    <section class="footer--box--return">
+        <i class="fa-solid fa-user-shield"></i>
+        <h4>Seguridad, de principio a fin</h4>
+    <p class="footer--box--description">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no
+        hay nada que no puedas hacer, porque estás
+        siempre protegid@.</p>
+</section>
+        <p class="footer--copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+
+</body>
+</html>

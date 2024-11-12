@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/8b20537db2.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <header class="header"> <div class="header--head">
+        <a href="/"><img  class="header__images--logo" alt="Logo Mercado Liebre" src="./images/logo-mercado-liebre.svg"></a>
+            
+        <form class="search" action="/home" method="post">
+            <div class="search-box">
+                <input class="search__control" type="text" name="search" id="search" placeholder=" ">
+                <label class="search__label" for="search">Buscar productos, marcas y más</label>
+                <button class="search-buttons__send" type="button" onclick="window.location.href='/';" ><i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </div>
+                
+        </form>
+        
+        
+        <p class="header--handDollarIcon-desktop"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        
+            </header>
+           
+            
+            <p class="header--handDollarIcon-mobile"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        
+            <div class="header--menu"> <p class="burger-menu">
+                <i class="fa-solid fa-bars"></i> </p>
+                <nav class="header--nav">
+                    <ul class="header--navBar" type="none">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                    <hr>
+                    <ul class="header--loginBar" type="none">
+                        <li><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></i></li>
+                        <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                        <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                    </ul>
+                    </nav> 
+            
+            </div>
+<main class="main">
+    <section class="register">
+<form id="myForm" action="/registro" method="post">
+
+<div class="register-box">
+    
+<input class="register__control" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+<div class="label_relatives">
+<label class="register__label" for="nombre"></label>
+</div>
+<p id="nameError" class="error-message">El nombre debe tener al menos 2 caracteres.</p>
+
+</div>
+
+
+
+<div class="register-box">
+<input class="register__control" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+<div class="label_relatives">
+
+<label class="register__label" for="usuario"></label></div>
+<p id="userError" class="error-message">El nombre de usuario debe tener de 4 a 16 caracteres.</p>
+
+</div>
+
+
+<div class="register-box">
+<input class="register__control" type="email" name="correo" id="correo" placeholder="E-mail">
+<div class="label_relatives">
+
+<label class="register__label" for="correo"></label>
+</div>
+<p id="emailError" class="error-message">Introduce un correo electrónico válido.</p>
+
+</div>
+
+
+<div class="register-box">
+    <h4 class="register-subtitle">Fecha de nacimiento</h4>
+
+<input class="register-date" type="date" name="nacimiento" id="nacimiento">
+<label class="register__label" for="nacimiento"></label>
+
+</div>
+
+<div class="register-box">
+<input class="register__control" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+<div class="label_relatives">
+
+<label class="register__label" for="domicilio"></label>
+</div>
+
+</div>
+<h4 class="register-radio-title">Perfil de usuario</h4>
+
+<div class="register-radio">
+<label for="perfilUsuario"></label>
+<input type="radio" name="perfilUsuario" value="comprador"> <span>Comprador</span>
+<input type="radio" name="perfilUsuario" value="vendedor"> <span>Vendedor</span>
+</div>
+<h4 class="register-checkbox-title">Intereses</h4>
+
+<article class="categories-dashboard">
+<div class="register-categories">
+    
+<label for="categorias"></label>
+<div class="checkbox__buttons">
+<input type="checkbox" name="categorias" value="Electro"> <span>Electro</span>
+</div>
+<div class="checkbox__buttons">
+<input type="checkbox" name="categorias" value="Moda"> <span>Moda</span>
+</div>
+<div class="checkbox__buttons">
+<input type="checkbox" name="categorias" value="Hogar"> <span>Hogar</span>
+</div>
+<div class="checkbox__buttons"><input type="checkbox" name="categorias" value="Jugueteria"> <span>Juguetería</span>
+</div>
+<div class="checkbox__buttons">
+<input type="checkbox" name="categorias" value="Vida sana"> <span>Vida sana</span>
+</div>
+</div>
+</article>
+<h4 class="register-upload-title">Selecciona una foto de perfil</h4>
+<label for="avatar"></label>
+<input type="file" name="avatar" accept=".jpg">
+
+<div class="register-box">
+<input class="register__control" type="password" name="password" id="password" placeholder="Contraseña">
+<div class="label_relatives">
+
+<label class="register__label" for="password"></label>
+<p id="passwordError" class="error-message">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+
+</div>
+
+</div>
+<div class="register-box">
+<input class="register__control" type="password" name="password2" id="password2" placeholder="Confirmar contraseña">
+<div class="label_relatives">
+
+<label class="register__label" for="password2"></label>
+</div>
+<p  id="confirmPasswordError" class="error-message">Ambas contraseñas deben ser iguales.</p>
+
+</div>
+
+<button class="register-box--buttons__send" type="button" onclick="window.location.href='/';" >Enviar</button>
+
+<button class="register-box--buttons__reset" type="reset">Reiniciar formulario</button>
+
+</form>
+<script>
+   
+    const nameInput = document.getElementById("nombre");
+    const nameError = document.getElementById("nameError");
+  
+    const userInput = document.getElementById("usuario");
+    const userError = document.getElementById("userError");
+  
+    const emailInput = document.getElementById("correo");
+    const emailError = document.getElementById("emailError");
+  
+    const passwordInput = document.getElementById("password");
+    const passwordError = document.getElementById("passwordError");
+  
+    const confirmPasswordInput = document.getElementById("password2");
+    const confirmPasswordError = document.getElementById("confirmPasswordError");
+  
+    nameInput.addEventListener("input", () => {
+      if (nameInput.value.length < 2) {
+        nameError.style.display = "inline";
+      } else {
+        nameError.style.display = "none";
+      }
+    });
+  
+    userInput.addEventListener("input", () => {
+      if (userInput.value.length < 4 || userInput.value.length > 16) {
+        userError.style.display = "inline";
+      } else {
+        userError.style.display = "none";
+      }
+    });
+  
+    emailInput.addEventListener("input", () => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        emailError.style.display = "inline";
+      } else {
+        emailError.style.display = "none";
+      }
+    });
+  
+    passwordInput.addEventListener("input", () => {
+      if (passwordInput.value.length < 4 || passwordInput.value.length > 12) {
+        passwordError.style.display = "inline";
+      } else {
+        passwordError.style.display = "none";
+      }
+    });
+  
+    confirmPasswordInput.addEventListener("input", () => {
+      if (confirmPasswordInput.value !== passwordInput.value) {
+        confirmPasswordError.style.display = "inline";
+      } else {
+        confirmPasswordError.style.display = "none";
+      }
+    });
+  
+    
+    document.getElementById("myForm").addEventListener("submit", (event) => {
+      if (nameInput.value.length < 2 || userInput.value.length < 4 || userInput.value.length > 16 ||
+          !emailRegex.test(emailInput.value) || passwordInput.value.length < 4 || passwordInput.value.length > 12 ||
+          confirmPasswordInput.value !== passwordInput.value) {
+        event.preventDefault(); 
+      }
+    });
+  </script>
+</section>
+
+</main>
+
+    <footer class="footer">
+        <article class="footer--box"></article>
+        <section class="footer--box--cards">
+            <i class="fa-solid fa-credit-card"></i>
+<h4>Pagá con tarjeta o en efectivo</h4>
+<p class="footer--description">Con Mercado Liebre Cash, tenés cuotas sin interés
+    con tarjeta o efectivo en puntos de pago. ¡Y
+    siempre es seguro!</p>
+</section>
+<section class="footer--box--shipment">
+    <i class="fa-solid fa-gift"></i>
+    <h4>Envío gratis desde $ 2.500</h4>
+    <p class="footer--description">Solo por estar registrad@ en Mercado Liebre tenés
+        envíos gratis en miles de productos. Es un
+        beneficio de Mercado Puntos.</p>
+</section>
+    <section class="footer--box--return">
+        <i class="fa-solid fa-user-shield"></i>
+        <h4>Seguridad, de principio a fin</h4>
+    <p class="footer--box--description">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no
+        hay nada que no puedas hacer, porque estás
+        siempre protegid@.</p>
+</section>
+        <p class="footer--copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+
+</body>
+</html>
